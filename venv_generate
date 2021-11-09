@@ -1,0 +1,32 @@
+Създаване на виртуална среда в примерна директория delme:
+
+# създавам директория delme
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~$ mkdir delme
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~$ cd delme
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$
+
+# създавам среда venv в директория /home/ludmil/delme
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$ python -m venv /home/ludmil/delme
+
+# лист на съдържанието на директория delme
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$ ls
+bin  include  lib  lib64  pyvenv.cfg  share
+
+# преминавам в директория bin
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$ cd bin
+
+# активирам средата с команда source и аргумент ./activate
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme/bin$ source ./activate
+
+# вече съм във виртуална среда delme
+(delme) ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme/bin$
+
+# преминавам ниво нагоре в работната директория delme
+(delme) ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme/bin$ cd ..
+
+# създавам работен файл, в случая primer.py чрез някое IDE или редактор
+................
+
+# след завършване на дейността деактивирам средата
+(delme) ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$ deactivate
+ludmil@ludmil-HP-340S-G7-Notebook-PC:~/delme$
